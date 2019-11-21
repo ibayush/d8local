@@ -10,10 +10,11 @@ class HelloWorldController {
  
     public function hello() {
         $service = \Drupal::service('my_service.say_hello');
-        $opt = $service->sayHello('override service');
-        
+        //print_r($service)->; die();
+        $services = $service->sayHello();
+        //print $services; 
         return array(
-                '#title' => $opt,
+                '#title' => $services,
                 '#markup' => 'Here is some content.',
             );
     }
