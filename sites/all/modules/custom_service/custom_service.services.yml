@@ -1,0 +1,7 @@
+services:
+ custom_service.say_hello:
+   class: Drupal\custom_service\HelloServices
+ 
+services:
+ custom_service.say_hello2:
+   class: Drupal\custom_service\HelloServices2  

@@ -1,5 +1,6 @@
 <?php
  
+
 namespace Drupal\my_service\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
@@ -10,7 +11,7 @@ class HelloWorldController {
  
     public function hello() {
         $service = \Drupal::service('my_service.say_hello');
-        $opt = $service->sayHello('override service');
+        $opt = $service->sayHello();
         
         return array(
                 '#title' => $opt,

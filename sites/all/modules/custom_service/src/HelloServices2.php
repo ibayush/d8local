@@ -1,22 +1,21 @@
 <?php
-
 /**
 * @file providing the service that say hello world and hello 'given name'.
 *
 */
-namespace  Drupal\my_service;
+namespace  Drupal\custom_service;
 
-class HelloServices {
+class HelloServices2 {
  protected $say_something;
  public function __construct() {
-   $this->say_something = 'Hello My World!';
+   $this->say_something = 'Hello World 2!';
  }
  public function  sayHello($name = ''){
    if (empty($name)) {
      return $this->say_something;
    }
    else {
-     return "Hello " . $name . "!";
+     return "Hellos " . $name . "!";
    }
  }
 }

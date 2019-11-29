@@ -1,0 +1,7 @@
+
+my_example:
+    path: /hello/world
+    defaults:
+        _controller: Drupal\my_example\Controller\MyExampleController::hello
+
+
